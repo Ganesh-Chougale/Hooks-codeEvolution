@@ -1,11 +1,21 @@
+import React from 'react';
 import './App.css';
+import ComponentTop from './Hooks/RH_useContext/Approach01/ComponentTop';
 
-import RH_useEffect_01 from './Hooks/RH_useEffect/RH_useEffect_03';
+export const userContext = React.createContext()
+export const cityContext = React.createContext()
+
 
 function App() {
+
+
   return (
     <div className="App">
-    <RH_useEffect_01></RH_useEffect_01>
+    <userContext.Provider value={"Ganesh"}>
+    <cityContext.Provider value={"Kolhapur"}>
+    <ComponentTop/>
+    </cityContext.Provider>
+    </userContext.Provider>
     </div>
   );
 }
