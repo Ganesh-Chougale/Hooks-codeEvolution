@@ -1,4 +1,6 @@
 **How to use**
+
+___Apprach01___
 1. inside end component (this case App.js), create the context.
    syntax
 ```javascript
@@ -66,3 +68,45 @@ import {userContext, cityContext} from "../../../App";
 // inside return statement
 
 ```
+⚠️: so this code is total verbose & not so readable at all.
+
+🟢: with using useContext, we can do it much better way
+    the first 2 steps of creating context & Provider will remain same
+    but the Consumer part is much
+
+
+___Apprach02___
+1. create context
+```javascript
+import Layer01Sky from './Hooks/RH_useContext/Approach02/Layer01Sky';
+export const userContext = React.createContext()
+export const cityContext = React.createContext()
+```
+
+2. create Proveder part
+```jsx
+    <userContext.Provider value={"Ganesh"}>
+    <cityContext.Provider value={"Kolhapur"}>
+    <Layer01Sky/>
+    </cityContext.Provider>
+    </userContext.Provider>
+```
+
+3. At end user use this instead of consumer part
+
+  A. import the useContext from react in end child
+  `import {useContext} from 'react';`
+
+  B. import the varible/ variables of Provider
+  `import {userContext, cityContext} from "../../../App"`
+
+  C. Assign them into variable
+  ```javascript
+    const user = useContext(userContext);
+    const city = useContext(cityContext);
+  ```
+
+  D. use those variable directly as a props
+  ```jsx
+    <h1>username is {user} & he lives in {city}</h1>
+  ```

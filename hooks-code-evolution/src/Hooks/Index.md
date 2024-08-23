@@ -20,7 +20,18 @@ Fetch_API_using_useEffect
 
 3. useContext
 RH_useContext
-    Approach01
+    Approach01  : Consumer part is verbose
         ComponentTop.js
         ComponentMid.js
         ComponentBot.js
+
+    Approach02  : Consumer part is easy
+        Layer01Sky.js
+        Layer02Land.js
+        Layer03Underground.js
+
+4. useReducer
+RH_useReducer
+    RH_useReducer01.js  : simple example
+    RH_useReducer02.js  : simple example
+
