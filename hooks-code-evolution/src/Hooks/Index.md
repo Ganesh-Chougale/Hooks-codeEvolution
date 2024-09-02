@@ -66,3 +66,9 @@
 
 **`useState` vs `useReducer`**
 ![useState vs useReducer](./Images/useState%20vs%20useReducer.png)
+
+
+### 7. `useCallback`
+
+#### RH_useCallback
+- **RH_useCallback_01**: Simple `useState`
