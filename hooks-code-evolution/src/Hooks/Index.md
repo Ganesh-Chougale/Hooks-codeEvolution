@@ -1,49 +1,68 @@
-### useState
->RH_useState
->>    RH_useState_01  : simple useState
->>    RH_useState_02  : ideal way to use useState
->>    RH_useState_03  : useState for Object
->>    RH_useState_04  : useState for Array
-in case of Object & Array always use **spread** operator
+### 1. `useState`
 
-### 2. useEffect
->RH_useEffect
->>    RH_useEffect_01 : but will re run everytime
->>    RH_useEffect_02 : run only on passed dependancy
->>    RH_useEffect_03 : run only once with empty [] dependancy
->>    RH_useEffect_04 : using RH_useEffect_03 component, learned how to stop memory leak
->>    RH_useEffect_05 : importancy of proper dependancy
+#### RH_useState
+- **RH_useState_01**: Simple `useState`
+- **RH_useState_02**: Ideal way to use `useState`
+- **RH_useState_03**: `useState` for Object
+- **RH_useState_04**: `useState` for Array
 
-Fetch_API_using_useEffect
->>    DataFetching_01     : how to fetch API using axios
->>    DataFetching_02     : fetch only targetted data using id & button
+  In the case of Object & Array, always use the **spread** operator.
 
-### 3. useContext
->RH_useContext
->>    Approach01  : Consumer part is verbose
->>>        ComponentTop.js
->>>        ComponentMid.js
->>>        ComponentBot.js
+---
 
-?>    Approach02  : Consumer part is easy
-?>>        Layer01Sky.js
-?>>        Layer02Land.js
-?>>        Layer03Underground.js
+### 2. `useEffect`
 
-### 4. useReducer
->RH_useReducer
->>    RH_useReducer01.js  : single useReducer
->>    RH_useReducer02.js  : multiple useReducer
->>    RH_useReducer03.js  : multiple useReducer easy example
+#### RH_useEffect
+- **RH_useEffect_01**: Runs on every render
+- **RH_useEffect_02**: Runs only on specified dependencies
+- **RH_useEffect_03**: Runs only once with empty `[]` dependency array
+- **RH_useEffect_04**: Preventing memory leaks with `useEffect`
+- **RH_useEffect_05**: Importance of specifying dependencies correctly
 
-### 5. useReduce + useContext
->   RH_Recude_Context
+#### Fetch API using `useEffect`
+- **DataFetching_01**: How to fetch API using `axios`
+- **DataFetching_02**: Fetch targeted data using ID and a button
 
-### 6. useReduce Datafetching
->RH_DataFetching
->>    DataFetching01.js   : Fetching online dummy data without useReducer
->>    DataFetching02.js   : Fetching online dummy data using useReducer
->>    FileHandling.js     : Fectch same data from native local json file
+---
 
-**useState vs useReducer**
+### 3. `useContext`
+
+#### RH_useContext
+- **Approach01**: Consumer part is verbose
+  - ComponentTop.js
+  - ComponentMid.js
+  - ComponentBot.js
+
+- **Approach02**: Consumer part is simplified
+  - Layer01Sky.js
+  - Layer02Land.js
+  - Layer03Underground.js
+
+---
+
+### 4. `useReducer`
+
+#### RH_useReducer
+- **RH_useReducer01.js**: Single `useReducer` example
+- **RH_useReducer02.js**: Multiple `useReducer` example
+- **RH_useReducer03.js**: Multiple `useReducer` with an easy example
+
+---
+
+### 5. `useReducer` + `useContext`
+
+#### RH_Reducer_Context
+
+---
+
+### 6. `useReducer` Data Fetching
+
+#### RH_DataFetching
+- **DataFetching01.js**: Fetching online dummy data without `useReducer`
+- **DataFetching02.js**: Fetching online dummy data using `useReducer`
+- **FileHandling.js**: Fetching the same data from a local JSON file
+
+---
+
+**`useState` vs `useReducer`**
 ![useState vs useReducer](./Images/useState%20vs%20useReducer.png)
