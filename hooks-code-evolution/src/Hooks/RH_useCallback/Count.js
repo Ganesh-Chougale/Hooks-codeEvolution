@@ -5,4 +5,4 @@ function Count({text, count}) {
     return <h2>{text}: {count}</h2>
 }
 
-export default Count
+export default React.memo(Count)

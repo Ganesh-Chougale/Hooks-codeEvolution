@@ -71,4 +71,5 @@
 ### 7. `useCallback`
 
 #### RH_useCallback
-- **RH_useCallback_01**: Simple `useState`
+- **ParentComponent.js**: why we need useCcallback & React.memo()
+- **RH_useCallback.js**: using `useCcallback` & `React.memo()`

@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Button from './Button';
 import Count from './Count';
 import Title from './Title';
 
 
-function ParentComponent() {
+function RH_useCallback() {
 
     const [age, setAge] = useState(25);
     const [salary, setSalary] = useState(5000)
-
-    function increAge(){
+    
+    const increAge = useCallback(()=>{
         setAge(prev => prev+1);
-    }
+    },[age])
 
-    function increSal(){
+    const increSal = useCallback(()=>{
         setSalary(prev => prev + 1000);
-    }
+    },[salary])
+    
   return (
     <div>
         <Title/>
@@ -27,4 +28,4 @@ function ParentComponent() {
   )
 }
 
-export default ParentComponent
+export default RH_useCallback

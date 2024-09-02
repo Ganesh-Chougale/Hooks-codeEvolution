@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import ParentComponent from './Hooks/RH_useCallback/ParentComponent';
+import RH_useCallback from './Hooks/RH_useCallback/RH_useCallback';
 
 function App() {
   return (
     <div className='App'>
-    <ParentComponent />
+    <RH_useCallback />
     </div>
 
   );
