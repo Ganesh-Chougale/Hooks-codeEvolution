@@ -39,3 +39,11 @@ RH_useReducer
 5. useReduce + useContext
 RH_Recude_Context
 
+6. useReduce Datafetching
+RH_DataFetching
+    DataFetching01.js   : Fetching online dummy data without useReducer
+    DataFetching02.js   : Fetching online dummy data using useReducer
+    FileHandling.js     : Fectch same data from native local json file
+
+**useState vs useReducer**
+![useState vs useReducer](./Images/useState%20vs%20useReducer.png)
