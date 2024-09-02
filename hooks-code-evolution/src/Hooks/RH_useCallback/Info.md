@@ -1,9 +1,9 @@
 This folder has 1 parent-component & 3 sub-components inside it.
 
 >>ParentComponent.js
->>>Button.js
->>>Count.js
->>>Title.js
+>>> - Button.js
+>>> - Count.js
+>>> - Title.js
 ---
 
 when render the one component by event like a trigger, all the sub-components get re-rendered.
