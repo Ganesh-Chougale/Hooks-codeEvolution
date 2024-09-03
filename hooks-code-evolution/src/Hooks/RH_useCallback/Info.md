@@ -47,9 +47,9 @@ we can see, using React.Meme it only re-render changed values. it did not re-ren
 
 
 *to solve this situation, we need **useCallback** hook*
-**what?**
+- **what?**
 > useCallback is a hook that return a memorized version of the callback function that only changes if one of he dependency has changed
-**why?**
+- **why?**
 > it is useful when passing callbacks to optimize child components that rely on reference equality to prevent unnecessary renders
 
 After using `useCallback()`

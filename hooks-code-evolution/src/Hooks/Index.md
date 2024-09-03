@@ -73,3 +73,18 @@
 #### RH_useCallback
 - **ParentComponent.js**: why we need useCcallback & React.memo()
 - **RH_useCallback.js**: using `useCcallback` & `React.memo()`
+
+### 8. `useMemo`
+
+#### RH_useMemo
+- **Counter.js** : deliberately created a situation which slow downs UI
+- **UseMemo01.js** : using `useMemo` excluded other components from being slow
+
+- `useCallBack` : caches the function(call) itself
+- `useMemo` : caches the function result only
+
+### 9. `useRef`
+
+#### RH_useRef
+- **FocusInput.js** : on button click focus on input tag
+- **HookTimer.js** : 

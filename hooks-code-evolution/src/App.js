@@ -1,13 +1,14 @@
 import React from 'react'
 import './App.css';
-import RH_useCallback from './Hooks/RH_useCallback/RH_useCallback';
+import TitleChanger01 from './Custom_Hook/TitleUpdater/WithCustomHook/TitleChanger01';
+import TitleChanger02 from './Custom_Hook/TitleUpdater/WithCustomHook/TitleChanger02';
 
 function App() {
   return (
     <div className='App'>
-    <RH_useCallback />
+    <TitleChanger01/>
+    <TitleChanger02/>
     </div>
-
   );
 }
 
