@@ -52,7 +52,7 @@ export default TitleChanger02
 - 2. **WithCustomHook**
     - TitleChanger01.js
     - TitleChanger02.js
-    - **Hook**
+    - **CustomHook**
       - useTitlepdater.js
 
 - **useTitlepdater.js**
