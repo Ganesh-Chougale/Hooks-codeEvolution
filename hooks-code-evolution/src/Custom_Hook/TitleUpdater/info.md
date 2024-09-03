@@ -1,6 +1,6 @@
 ### the task is to create 2 button components which will increase the count & count will be render as document.title
 
-- 1. **WithoutCustomHook**
+- 1. **NoCustomHook**
     - TitleChanger01.js
     - TitleChanger02.js
 
