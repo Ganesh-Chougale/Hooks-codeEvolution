@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import useTitlepdater from './Hook/useTitlepdater';
+import useTitlepdater from './Hook/useTitlepdater'; // import the custome Hook
 
 function TitleChanger02() {
     const [count, setCount] = useState(0);
 
     useTitlepdater(count);
+    // remove useEffect + import & use custome Hook instead
 
   return (
     <div>
