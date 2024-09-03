@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import useTitlepdater from './Hook/useTitlepdater'; // import the custome Hook
+import useTitlepdater from './CustomHook/useTitlepdater'; // import the custome Hook
 
 function TitleChanger01() {
     const [count, setCount] = useState(0);
