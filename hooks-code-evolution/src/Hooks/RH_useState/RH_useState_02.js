@@ -39,7 +39,7 @@ function RH_useState_01() {
     <div id='Ideal'>
     <h1>Counter: {val}</h1>
       <button onClick={ ()=> setVal(prev => prev + 1)}>Incement</button>
-      <button onClick={ ()=> setVal(prev => prev + 2 )}>Decrement</button>
+      <button onClick={ ()=> setVal(prev => prev - 1)}>Decrement</button>
       <button onClick={ ()=> setVal(startingValue)}>Reset</button>
       <button onClick={sum5}>Sum 5</button>
     <h2>Ideal way useState</h2>
